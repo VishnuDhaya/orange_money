@@ -307,7 +307,7 @@ def db_transform(df):
     data = rename(df)
     print(data)
     data['acc_prvdr_code'] = "ORA"
-    data['country_code'] = "MGA"
+    data['country_code'] = "MAG"
     data['descr'] = ""
     data['stmt_txn_date'] = data.apply(concat_dt_tm, axis = 1)    
     data = data.drop(['hour'], axis=1)
